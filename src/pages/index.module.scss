@@ -1,0 +1,74 @@
+@media only screen and (max-width: 640px) {
+  .fmBoy {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .fmBoy {
+    width: 50%;
+  }
+}
+
+.chome {
+  .bg {
+    background: url("../../static/img/home/fj.jpg") center center no-repeat;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #b5b3b2;
+    position: relative;
+    filter: blur(2px);
+    .fmBoy {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      max-width: 640px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img {
+      text-align: center;
+      opacity: 0.5;
+      img {
+        width: 80%;
+      }
+    }
+    .btn {
+      text-align: center;
+      margin-top: 10px;
+      button {
+        border: none;
+        border-radius: 2px;
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        background-color: #2e8555;
+        cursor: pointer;
+        margin: auto;
+      }
+    }
+  }
+  .webid{
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    z-index: 3;
+    &>a{
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,240 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+[role="region"]{
+  display: none;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.code-error {
+  background-color: #ff000020;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #ff000080;
+}
+
+.code-sucess {
+  background-color: rgb(0 164 0 / 15%);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid rgb(0 148 0);
+}
+
+.code-warn {
+  background-color: rgb(255 186 0 / 15%);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #e6a700;
+}
+
+.container {
+  h2 {
+    margin-top: 100px;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 6px;
+    font-size: 1.8rem !important;
+  }
+
+  @mixin bs {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @mixin br {
+    border-radius: 8px;
+  }
+
+  img[alt="fe-1.2"] {
+    width: 400px;
+  }
+
+  img[alt="fe-1.3"],
+  img[alt="fe-1.4"] {
+    @include br;
+    width: 500px;
+  }
+
+  img[alt="fe-3.1"] {
+    width: 500px;
+  }
+
+  img[alt="fe-3.2"] {
+    width: 100px;
+  }
+
+  img[alt="fe-1.1"] {
+    width: 20%;
+  }
+
+  img[alt="fe-1.2"] {
+    width: 70%;
+  }
+
+  img[alt="fe-1.2"] {
+    width: 70%;
+  }
+
+  img[alt="fe-2.1"] {
+    width: 200px;
+  }
+  img[alt="fe-2.2"] {
+    width: 300px;
+  }
+  img[alt="fe-2.3"] {
+    width: 60px;
+  }
+
+  img[alt="fe-2.4"],
+  img[alt="fe-2.5"] {
+    @include bs;
+    width: 200px;
+  }
+
+  img[alt="fe-2.6"] {
+    width: 200px;
+  }
+
+  img[alt="fe-2.7"] {
+    @include br;
+    width: 500px;
+  }
+
+  img[alt="fe-2.8"],
+  img[alt="fe-2.9"] {
+    @include br;
+    width: 100%;
+  }
+
+  img[alt="fe-4.1"] {
+    @include bs;
+    width: 100px;
+  }
+
+  img[alt="fe-4.2"] {
+    @include bs;
+    width: 200px;
+  }
+
+  img[alt="fe-4.3"] {
+    @include bs;
+    width: 100px;
+  }
+
+  img[alt="fe-5.2"] {
+    @include bs;
+    width: 400px;
+  }
+
+  img[alt="fe-5.3"],
+  img[alt="fe-5.4"] {
+    @include bs;
+  }
+  img[alt="fe-20227201647"] {
+    @include bs;
+    width: 400px;
+  }
+
+  img[alt="fe-20227251144"] {
+    @include bs;
+    @include br;
+    width: 140px;
+  }
+}
+
+.fangsheng {
+  margin-top: 10px;
+  /* 要把阴影与大小配合好，一般来说大小都是偏大时采用 */
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  text-transform: uppercase; /* 全开大写 */
+  font-size: 40px;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
+  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+}
+
+
+@media print {
+ .noprint, .theme-doc-breadcrumbs{
+  display: none;
+ }
+ .print-show{
+  display: block;
+ }
+ .print-show-inline{
+  display: inline-block!important;
+ }
+}
+
+.docs-doc-id-resume{
+  .theme-doc-markdown{
+    width: 960px;
+  }
+
+  .font12{
+    padding: 4px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0,0.05);
+    width: 70%;
+  }
+
+  p{
+    margin-bottom: 2px;
+  }
+
+  h2 {
+    margin-top: 20px!important;
+  }
+  ul{
+    margin-bottom: 6px;
+  }
+  li{
+    padding-bottom: 8px!important;
+  }
+  .ant-timeline-item{
+    li{
+      padding-bottom: 0px!important;
+    }
+  }
+
+  .my-timeline{
+    .ant-timeline-item{
+      padding-bottom: 30px!important;
+    }
+  }
+  .type-icon{
+    width: 30px;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+  }
+}
